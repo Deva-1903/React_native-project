@@ -24,10 +24,26 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "host.exp.exponent"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyBAlURnab0-M1TeRb6QiLAcxTX1F9CFPjQ",
+          "authDomain": "pie-chips.firebaseapp.com",
+          "projectId": "pie-chips",
+          "storageBucket": "pie-chips.appspot.com",
+          "messagingSenderId": "737803248370",
+          "appId": "1:737803248370:web:d738befb657b527a6ae66b"
+        }
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e95b766d-6078-46b5-bbda-84bac6bbf9c5"
+      }
     }
   }
 }

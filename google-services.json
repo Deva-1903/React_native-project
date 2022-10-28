@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "737803248370",
+    "firebase_url": "https://pie-chips-default-rtdb.firebaseio.com",
+    "project_id": "pie-chips",
+    "storage_bucket": "pie-chips.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737803248370:android:aaabd6a6dbe8ce0e6ae66b",
+        "android_client_info": {
+          "package_name": "host.exp.exponent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737803248370-hd7nf71jspu0j23730813gaa2hikfggv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "host.exp.exponent",
+            "certificate_hash": "c6aabe8670550e3e0a7593b77d5ca2bcd2444ea7"
+          }
+        },
+        {
+          "client_id": "737803248370-t07e3sbjut05jdubrf22umdue3soj2io.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPDxT3WrTKpcY1TuJAzOt_ABYdq78rMHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737803248370-t07e3sbjut05jdubrf22umdue3soj2io.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
