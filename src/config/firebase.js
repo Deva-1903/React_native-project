@@ -3,13 +3,13 @@ import "firebase/compat/firestore";
 import "firebase/compat/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBAlURnab0-M1TeRb6QiLAcxTX1F9CFPjQ",
-  authDomain: "pie-chips.firebaseapp.com",
-  databaseURL: "https://pie-chips-default-rtdb.firebaseio.com",
-  projectId: "pie-chips",
-  storageBucket: "pie-chips.appspot.com",
-  messagingSenderId: "737803248370",
-  appId: "1:737803248370:web:d738befb657b527a6ae66b",
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
 };
 // Initialize Firebase
 let app;
