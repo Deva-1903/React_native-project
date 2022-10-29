@@ -3,11 +3,10 @@
 
 * User can login or register as a new user
 * Post's and it's every details(comments, profilepic, name) are pulled from firebase database
-* User can like or unlike a post
+* User can like or unlike the post and can comment in the post to.
 * Check the demo video
 
 Currently working on:
-* Post Comment (Adding dynamic comments to the post)
 * Google and faceBoook authentication
 
 To use the app:
