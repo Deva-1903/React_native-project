@@ -232,7 +232,10 @@ const Comments = ({ post }) => (
     {post.comments.map((comment, index) => (
       <View key={index} style={{ flexDirection: "row", marginTop: 5 }}>
         <Text style={{ color: "white" }}>
-          <Text style={{ fontWeight: "600" }}>_devaaa__</Text> {comment}
+          <Text style={{ fontWeight: "600" }}>
+            {auth.currentUser.displayName}
+          </Text>{" "}
+          {comment}
         </Text>
       </View>
     ))}
