@@ -15,7 +15,7 @@ import { EvilIcons, Ionicons } from "@expo/vector-icons";
 
 import { auth, db } from "../config/firebase";
 import firebase from "firebase/compat/app";
-import "firebase/compat/firestore";
+
 import { TextInput } from "react-native-gesture-handler";
 const postFooterIcons = [
   {
@@ -60,19 +60,17 @@ const Post = ({ post, navigation }) => {
       });
   };
 
-  const postComment = (post, setInput) => {
+  const postComment = () => {
     db.collection("users")
       .doc(post.owner_email)
       .collection("posts")
       .doc(post.id)
       .update({
-        comments: firebase.firestore.FieldValue.arrayUnion(
-          firebase.auth().currentUser.email
-        ),
+        comments: firebase.firestore.FieldValue.arrayUnion(typecomment),
       });
   };
 
-  const [input, setInput] = useState("");
+  const [typecomment, setTypecomment] = useState("");
 
   return (
     <View style={{ marginBottom: 30 }}>
@@ -90,8 +88,8 @@ const Post = ({ post, navigation }) => {
         <CommentSection post={post} />
         <Comments post={post} />
         <TypeComment
-          input={input}
-          setInput={setInput}
+          typecomment={typecomment}
+          setTypecomment={setTypecomment}
           postComment={postComment}
         />
       </View>
@@ -205,7 +203,7 @@ const CommentSection = ({ post }) => (
   </View>
 );
 
-const TypeComment = ({ post, input, setInput, postComment }) => {
+const TypeComment = ({ postComment, typecomment, setTypecomment }) => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <KeyboardAvoidingView
@@ -216,8 +214,8 @@ const TypeComment = ({ post, input, setInput, postComment }) => {
         <>
           <View styles={styles.commentFooter}>
             <TextInput
-              value={input}
-              onChangeText={(text) => setInput(text)}
+              value={typecomment}
+              onChangeText={(text) => setTypecomment(text)}
               placeholder="Post a comment"
               style={styles.textInput}
               onSubmitEditing={postComment}
@@ -234,10 +232,7 @@ const Comments = ({ post }) => (
     {post.comments.map((comment, index) => (
       <View key={index} style={{ flexDirection: "row", marginTop: 5 }}>
         <Text style={{ color: "white" }}>
-          <Text style={{ fontWeight: "600" }}>
-            {auth.currentUser.displayName}
-          </Text>{" "}
-          {comment}
+          <Text style={{ fontWeight: "600" }}>_devaaa__</Text> {comment}
         </Text>
       </View>
     ))}

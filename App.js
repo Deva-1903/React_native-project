@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import StackNavigator from "./StackNavigator";
 import { AuthProvider } from "./hooks/useAuth";
 import AuthNavigation from "./AuthNavigation";
-
+import "expo-dev-client";
 export default function App() {
   return (
     <NavigationContainer>
