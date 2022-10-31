@@ -22,7 +22,7 @@ import { auth } from "../config/firebase";
 
 import "expo-dev-client";
 // import { GoogleSignin } from "@react-native-google-signin/google-signin";
-
+import * as Facebook from "expo-facebook";
 const LoginScreen = ({ navigation }) => {
   // const { signInWithGoogle } = useAuth();
   const [email, setEmail] = useState("");
